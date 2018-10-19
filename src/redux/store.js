@@ -15,7 +15,7 @@ const config = {
 
 const reducer = persistReducer(config, reducers);
 const store = createStore( reducer, {} , applyMiddleware(ReduxThunk,logger));
-const persistor = persistStore(store);
+const persistor = persistStore(store).purge();
 
 export  default { store, persistor };
 
