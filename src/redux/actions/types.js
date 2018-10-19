@@ -9,6 +9,6 @@ export const LOGIN_USER_FAIL = 'login_user_fail';
 export const LOGIN_USER = 'login_user';
 export const LOGIN_LOADING = 'login_loading';
 export const LOGIN_ERROR = 'login_error';
-
+export const LOGIN_USER_FAILED = 'login_user_failed';
 export const LOGIN_EMAIL_CHANGED = 'login_email_changed';
 export const LOGIN_PASSWORD_CHANGED = 'login_password_changed';

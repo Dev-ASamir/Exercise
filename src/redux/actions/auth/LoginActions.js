@@ -6,7 +6,7 @@ import {
   LOGIN_EMAIL_CHANGED,
   LOGIN_PASSWORD_CHANGED,
   LOGIN_USER,
-  LOGIN_USER_FAIL,
+  LOGIN_USER_FAILED,
   LOGIN_LOADING,
 
 } from '../types';
@@ -45,7 +45,7 @@ export const signInUser = ({ Login_Email, Login_Password }) => {
 }
 
 const loginUserFail = (dispatch, Login_error) => {
-  dispatch({ type: LOGIN_USER_FAIL, payload: Login_error });
+  dispatch({ type: LOGIN_USER_FAILED, payload: Login_error });
 }
 
 

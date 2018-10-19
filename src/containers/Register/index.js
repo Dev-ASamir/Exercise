@@ -42,7 +42,8 @@ class Register extends Component {
 
 
   renderError(error) {
-    if (error.length > 0) {
+
+    if (error.length > 0 && (!this.props.Name || !this.props.Email || !this.props.Password)) {
       return <AppText style={styles.errorText} >{error}</AppText>
     }
   }
